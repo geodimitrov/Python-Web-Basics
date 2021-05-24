@@ -2,4 +2,5 @@ from django.shortcuts import render
 
 
 def index(req):
-    return render(req, "index.html")
+    context = {"Name": "Georgi"}
+    return render(req, "index.html", context)
