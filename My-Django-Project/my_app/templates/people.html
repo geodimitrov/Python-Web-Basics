@@ -5,9 +5,9 @@
     <title>People</title>
 </head>
 <body>
-<h1>Peoples' names:</h1>
-{% for person in people %}
-    {{ person.name }}, {{ person.age }}
-{% endfor %}
+<h1>{{message}}</h1>
+    {% for person in people %}
+        {{ person.name }}, {{ person.age }}
+    {% endfor %}
 </body>
 </html>

@@ -12,4 +12,5 @@ def people_page(request):
     context = {
         "people": Person.objects.all(),
     }
+    context["message"] = "Peoples' names"
     return render(request, 'people.html', context)
