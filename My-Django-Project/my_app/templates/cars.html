@@ -6,5 +6,10 @@
 </head>
 <body>
 <h1>This is my list of cars</h1>
+    {% for car in cars %}
+        <li>
+            {{ car.brand}} {{ car.model }}
+        </li>
+    {% endfor %}
 </body>
 </html>

@@ -1,5 +1,10 @@
 from django.shortcuts import render
 
-def cars_page(request):
+from my_app.cars.models import Car
 
-    return render(request, 'cars.html')
+
+def cars_page(request):
+    context = {
+        "cars": Car.objects.all()
+    }
+    return render(request, 'cars.html', context)
