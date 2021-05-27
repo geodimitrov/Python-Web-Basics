@@ -7,7 +7,9 @@
 <body>
 <h1>{{message}}</h1>
     {% for person in people %}
-        {{ person.name }}, {{ person.age }}
+        <li>
+            {{ person.name }}, {{ person.age }}
+        </li>
     {% endfor %}
 </body>
 </html>

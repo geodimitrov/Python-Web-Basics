@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'my_app',
     'my_app.people',
+    'my_app.cars',
 
 ]
 
