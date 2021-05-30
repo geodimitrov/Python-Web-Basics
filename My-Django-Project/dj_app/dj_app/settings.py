@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'dj_app',
     'dj_app.people',
+    'dj_app.generic',
 ]
 
 MIDDLEWARE = [
