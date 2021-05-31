@@ -8,3 +8,7 @@ def people_page(request):
         "people": Person.objects.all()
     }
     return render(request, "people.html", context)
+
+def create_person(request):
+
+    return render(request, 'create_person.html')
