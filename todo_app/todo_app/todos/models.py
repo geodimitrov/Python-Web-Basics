@@ -12,7 +12,8 @@ class Person(models.Model):
 
 
 class Todo(models.Model):
-    text = models.TextField()
+    text = models.CharField(max_length=30)
+    description = models.TextField()
     state = models.BooleanField(default=False)
     owner = models.ForeignKey(
         Person,
