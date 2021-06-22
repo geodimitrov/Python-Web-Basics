@@ -26,4 +26,11 @@ def create_todo(request):
             description=description,
         )
         todo.save()
-    return redirect('/')
+        return redirect('/')
+    else:
+        context = {
+            'todos': Todo.objects.all(),
+            'form': form,
+        }
+
+        return render(request, 'index.html', context)

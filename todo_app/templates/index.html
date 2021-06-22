@@ -60,6 +60,7 @@
             {% for todo in todos %}
                 <div class="todo">
                     <p>{{ todo.text }}</p>
+                    <p>{{ todo.description }}</p>
                     {% if todo.state %}
                         <div class="done">DONE</div>
                     {% else %}
