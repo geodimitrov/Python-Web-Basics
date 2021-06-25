@@ -1,3 +1,7 @@
 from django.db import models
+from petstagram.pets.models import Pet
 
-# Create your models here.
+
+class Comment(models.Model):
+    comment = models.TextField()
+    pet = models.ForeignKey(Pet, on_delete=models.CASCADE)
