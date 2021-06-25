@@ -1,3 +1,4 @@
+from django.core.validators import MinValueValidator
 from django.db import models
 
 
@@ -6,7 +7,9 @@ class Book(models.Model):
         max_length=20,
     )
     pages = models.IntegerField(
-        default=0,
+        validators=(
+            MinValueValidator(1),
+        )
     )
     description = models.CharField(
         max_length=100,
