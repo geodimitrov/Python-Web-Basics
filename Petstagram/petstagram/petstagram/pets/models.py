@@ -17,7 +17,7 @@ class Pet(models.Model):
     )
     age = models.PositiveIntegerField()
     description = models.TextField()
-    image_url = models.URLField()
+    image = models.ImageField()
 
 
 class Like(models.Model):
