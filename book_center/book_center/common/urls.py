@@ -1,7 +1,6 @@
 from django.urls import path
-from book_center.common.views import homepage_view
-
+from book_center.common.views import HomeView
 
 urlpatterns = [
-    path('', homepage_view, name='home page')
+    path('', HomeView.as_view(), name='home page')
 ]
