@@ -1,5 +1,5 @@
 """
-WSGI config for templates_advanced project.
+WSGI config for pythons project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -8,9 +8,8 @@ https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
 """
 
 import os
-
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'templates_advanced.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'pythons_app.settings')
 
 application = get_wsgi_application()

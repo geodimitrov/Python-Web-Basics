@@ -1,9 +1,8 @@
 from django.shortcuts import render, redirect
-from .forms import PythonCreateForm
-from .models import Python
+from pythons_app.pythons.forms import PythonCreateForm
+from pythons_app.pythons.models import Python
 
 
-# Create your views here.
 def index(req):
     pythons = Python.objects.all()
     return render(req, 'index.html', {'pythons': pythons})
